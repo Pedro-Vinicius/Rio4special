@@ -23,53 +23,47 @@
             android:src="@drawable/logo_login_rio4special"
             android:layout_marginBottom="60dp" />
 
-        <EditText
-            android:id="@+id/user"
-            style="@style/editext_graybg"
-            android:layout_width="wrap_content"
-            android:layout_height="65dp"
-            android:layout_marginBottom="10dp"
-            android:drawableLeft="@drawable/ic_username"
-            android:hint="@string/username" >
-
-            <requestFocus />
-        </EditText>
-
-        <EditText
-            android:id="@+id/pwd"
-            style="@style/editext_graybg"
-            android:layout_width="wrap_content"
-            android:layout_height="65dp"
-            android:layout_marginBottom="100dp"
-            android:layout_marginTop="@dimen/pad_5dp"
-            android:drawableLeft="@drawable/ic_pwd"
-            android:hint="@string/password"
-            android:inputType="textPassword" >
-        </EditText>
-
         <LinearLayout
             android:id="@+id/main"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal" >
+            android:orientation="horizontal"
+            android:layout_weight="8">
 
             <Button
-                android:id="@+id/btnLogin"
+                android:id="@+id/btnCategoria"
                 style="@style/btn_white_large"
                 android:layout_width="wrap_content"
                 android:layout_height="65dp"
                 android:layout_weight="1"
-                android:text="Entrar" />
+                android:text="Categorias" />
 
             <Button
-                android:id="@+id/btnReg"
+                android:id="@+id/btnAcessibilidade"
                 style="@style/btn_white_large"
                 android:layout_width="wrap_content"
                 android:layout_height="65dp"
                 android:layout_weight="1"
-                android:text="@string/register" 
+                android:layout_marginBottom="50dp"
+                android:text="Acessibilidades"
                 android:layout_marginLeft="@dimen/pad_10dp"/>
         </LinearLayout>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Melhores Avaliados"
+            android:id="@+id/melhoresAvaliados"
+            android:paddingBottom="100dp"/>
+
+        <Button
+            style="@style/btn_white_large"
+            android:id="@+id/pesquisa"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:text="Pesquisar" />
+
     </LinearLayout>
 
 </ScrollView>
