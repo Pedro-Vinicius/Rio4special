@@ -16,13 +16,6 @@
         android:paddingRight="@dimen/pad_15dp"
         android:paddingTop="@dimen/pad_20dp" >
 
-        <ImageView
-            android:id="@+id/imageView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/logo_login_rio4special"
-            android:layout_marginBottom="40dp" />
-
         <CheckBox
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

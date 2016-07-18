@@ -16,7 +16,15 @@
         android:paddingRight="@dimen/pad_15dp"
         android:paddingTop="@dimen/pad_20dp" >
 
-
+        <EditText
+            android:layout_height="80dp"
+            android:hint="Comentário"
+            style="@style/editext_graybg"
+            android:layout_width="match_parent"
+            android:id="@+id/editTextComentario"
+            android:drawableLeft="@drawable/ic_compose"
+            android:layout_weight="8"
+            android:layout_marginBottom="300dp"/>
 
         <LinearLayout
             android:id="@+id/main"
@@ -26,38 +34,22 @@
             android:layout_weight="8">
 
             <Button
-                android:id="@+id/btnCategoria"
+                android:id="@+id/btnFoto"
                 style="@style/btn_white_large"
                 android:layout_width="wrap_content"
                 android:layout_height="65dp"
                 android:layout_weight="1"
-                android:text="Categorias" />
+                android:text="Adicionar Foto" />
 
             <Button
-                android:id="@+id/btnAcessibilidade"
+                android:id="@+id/btnConfirmar"
                 style="@style/btn_white_large"
                 android:layout_width="wrap_content"
                 android:layout_height="65dp"
                 android:layout_weight="1"
-                android:layout_marginBottom="50dp"
-                android:text="Acessibilidades"
+                android:text="Confirmar"
                 android:layout_marginLeft="@dimen/pad_10dp"/>
         </LinearLayout>
-
-        <Switch
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Melhores Avaliados"
-            android:id="@+id/melhoresAvaliados"
-            android:paddingBottom="100dp"/>
-
-        <Button
-            style="@style/btn_white_large"
-            android:id="@+id/pesquisa"
-            android:layout_width="wrap_content"
-            android:layout_height="65dp"
-            android:layout_weight="1"
-            android:text="Pesquisar" />
 
     </LinearLayout>
 

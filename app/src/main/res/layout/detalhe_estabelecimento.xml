@@ -17,47 +17,67 @@
         android:paddingTop="@dimen/pad_20dp" >
 
 
+        <TextView
+            android:layout_width="352dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="CEFET-RJ"
+            android:id="@+id/textEstabelecimento"
+            android:layout_weight="10"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:textColor="#3c433d" />
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="(Centro Tecnológico)"
+            android:id="@+id/textDescritivo"
+            android:textColor="#3c433d"
+            android:paddingBottom="@dimen/pad_20dp"/>
 
         <LinearLayout
             android:id="@+id/main"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_weight="8">
+            android:layout_weight="8"
+            >
 
             <Button
-                android:id="@+id/btnCategoria"
+                android:id="@+id/btnRegistroEntrada"
                 style="@style/btn_white_large"
                 android:layout_width="wrap_content"
                 android:layout_height="65dp"
                 android:layout_weight="1"
-                android:text="Categorias" />
+                android:text="Registro de Entrada" />
 
             <Button
-                android:id="@+id/btnAcessibilidade"
+                android:id="@+id/btnComentario"
                 style="@style/btn_white_large"
                 android:layout_width="wrap_content"
                 android:layout_height="65dp"
                 android:layout_weight="1"
                 android:layout_marginBottom="50dp"
-                android:text="Acessibilidades"
+                android:text="Comentários"
                 android:layout_marginLeft="@dimen/pad_10dp"/>
         </LinearLayout>
 
-        <Switch
+        <RatingBar
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Melhores Avaliados"
-            android:id="@+id/melhoresAvaliados"
-            android:paddingBottom="100dp"/>
+            android:id="@+id/ratingBar"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="10"
+            android:paddingBottom="@dimen/pad_20dp" />
 
-        <Button
-            style="@style/btn_white_large"
-            android:id="@+id/pesquisa"
-            android:layout_width="wrap_content"
-            android:layout_height="65dp"
-            android:layout_weight="1"
-            android:text="Pesquisar" />
+        <ExpandableListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/expListViewAcess"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="10" />
 
     </LinearLayout>
 
